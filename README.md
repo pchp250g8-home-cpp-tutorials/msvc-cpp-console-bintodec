@@ -4,4 +4,9 @@ A console application in the C++ programming language. The program does the foll
 
 Developed in the Microsoft Visual Studio integrated environment.
 
+BinToDec. Занятия по C++. ИС Visual Studio. Простой Ввод/Вывод. Алгоритмы. Массивы. Платформа Windows. Консольное приложение.
+
+Консольное приложение написанное на языке программирования C++. 
+Программа делает следующее:
+
 Разработано в нитегрированной среде Microsoft Visual Studio.
