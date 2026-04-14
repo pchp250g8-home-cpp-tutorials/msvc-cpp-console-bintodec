@@ -10,8 +10,8 @@ int main(int argc, char* args[])
 {
     const unsigned int nMaxBinDigits = static_cast<unsigned int>(ceil(log2(UINT32_MAX)));
     const std::regex oRegEx("^[0-1]+$");
-    unsigned int nBinPower = 1;
-    unsigned int nDecNum = 0;
+    long long nBinPower = 1L;
+    long long nDecNum = 0L;
     std::string strLine;
     system("cls");
     std::cout << "Input a binary number\r\n";
