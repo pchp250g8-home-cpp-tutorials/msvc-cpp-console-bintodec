@@ -8,10 +8,10 @@
 
 int main(int argc, char* args[])
 {
-    const unsigned int nMaxBinDigits = static_cast<unsigned int>(floor(log2(UINT32_MAX)));
+    const unsigned int nMaxBinDigits = static_cast<unsigned int>(ceil(log2(UINT32_MAX)));
     const std::regex oRegEx("^[0-1]+$");
     unsigned int nBinPower = 1;
-    unsigned int nBinNum = 0;
+    unsigned int nDecNum = 0;
     std::string strLine;
     system("cls");
     std::cout << "Input a binary number\r\n";
@@ -27,11 +27,11 @@ int main(int argc, char* args[])
     for (unsigned int i = 0; i < nStrLen; i++)
     {
         unsigned int nBinDigit = strLine[nStrLen - 1 - i] - '0';
-        nBinNum += (nBinDigit * nBinPower);
+        nDecNum += (nBinDigit * nBinPower);
         nBinPower *= 2;
     }
     std::cout << "The decimal equavalent of the binary number "
-        << strLine << " is: " << nBinNum << "\r\n";
+              << strLine << " is: " << nDecNum << "\r\n";
     std::cin.get();
     return 0;
 }
